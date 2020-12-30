@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::namespace('Home')->group(function(){
-    Route::get('public/login', 'PublicController@login');
+    Route::get('public/login/{id?}/{name?}', 'PublicController@login');
 });
+
